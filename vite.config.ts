@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
-
 import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   resolve: {
     alias: {
-      '@antigravity/tax-engine': path.resolve(__dirname, '../../packages/tax-engine/src/index.ts'),
-      '@antigravity/ui': path.resolve(__dirname, '../../packages/ui/src/index.ts'),
-      '@antigravity/tokens': path.resolve(__dirname, '../../packages/tokens/src/index.ts'),
+      '@antigravity/tax-engine': path.resolve(__dirname, './packages/tax-engine/src/index.ts'),
+      '@antigravity/ui': path.resolve(__dirname, './packages/ui/src/index.ts'),
+      '@antigravity/tokens': path.resolve(__dirname, './packages/tokens/src/index.ts'),
     },
   },
   plugins: [

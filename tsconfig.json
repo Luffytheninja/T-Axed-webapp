@@ -22,13 +22,13 @@
         "baseUrl": ".",
         "paths": {
             "@antigravity/tax-engine": [
-                "../../packages/tax-engine/src/index.ts"
+                "./packages/tax-engine/src/index.ts"
             ],
             "@antigravity/ui": [
-                "../../packages/ui/src/index.ts"
+                "./packages/ui/src/index.ts"
             ],
             "@antigravity/tokens": [
-                "../../packages/tokens/src/index.ts"
+                "./packages/tokens/src/index.ts"
             ]
         }
     },

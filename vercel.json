@@ -1,12 +1,19 @@
 {
-    "installCommand": "pnpm install",
-    "buildCommand": "pnpm build",
-    "outputDirectory": "apps/t-axed/dist",
-    "framework": null,
     "rewrites": [
         {
             "source": "/(.*)",
             "destination": "/index.html"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "X-Content-Type-Options",
+                    "value": "nosniff"
+                }
+            ]
         }
     ]
 }
